@@ -1,0 +1,136 @@
+body {
+    color: #333;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    background-color: #706e6d;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #b8b8b8;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar li {
+    color: white;
+    padding: 1em;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #b8b8b8;
+    color: white;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.dropdown li:hover {
+    background-color: #555;
+    text-decoration: none;
+}
+
+section {
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: none;
+}
+
+@media all {
+    body {
+        background-color: #e0f7fa;
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    .navbar li {
+        padding: 0.8em;
+    }
+
+    section {
+        font-size: 1rem;
+        color: #333;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+        color: black;
+        border-bottom: 1px solid #ccc;
+    }
+
+    section {
+        font-size: 0.8rem;
+        color: black;
+    }
+
+    section a {
+        color: black;
+        text-decoration: underline;
+    }
+}
